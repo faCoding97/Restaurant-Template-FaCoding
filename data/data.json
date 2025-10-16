@@ -6,14 +6,15 @@
     "instagram": "https://instagram.com/ElixCode",
     "location": "123 Main St, City, Country",
     "email": "info@ElixCode.com",
-    "qrCodeUrl": "/images/qr-code.png",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=600x600&data=https%3A%2F%2Frestaurant.elixflare.com",
     "heroTagline": "Delicious Food For Every Mood",
     "heroCta": "Order Now",
     "openHours": "Mon\u2013Sun: 9:00 \u2013 22:00",
     "about": {
       "title": "We Are ElixCode",
       "text": "We serve freshly made burgers, pizzas, and more \u2014 prepared with love and the freshest ingredients. Scan the QR on your table to browse the menu and place your order with the waiter."
-    }
+    },
+    "siteUrl": "https://restaurant.elixflare.com"
   },
   "promotions": [
     {

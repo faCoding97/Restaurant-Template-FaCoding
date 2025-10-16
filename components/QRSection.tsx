@@ -13,7 +13,7 @@ export default function QRSection({ info }: { info: RestaurantInfo }) {
           </p>
           <div className="mt-6 flex gap-3">
             <a href={info.qrCodeUrl} download className="btn btn-primary">Download QR</a>
-            <a href="/" className="btn ring-1 ring-white/20 hover:ring-white/40">Preview Link</a>
+            <a href={info.siteUrl} target="_blank" rel="noopener noreferrer" className="btn ring-1 ring-white/20 hover:ring-white/40">Preview Link</a>
           </div>
         </div>
         <div className="relative aspect-square w-full max-w-sm mx-auto card">

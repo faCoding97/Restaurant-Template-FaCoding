@@ -7,6 +7,7 @@ export interface RestaurantInfo {
   location: string;
   email: string;
   qrCodeUrl: string;
+  siteUrl: string;
   heroTagline: string;
   heroCta: string;
   openHours: string;

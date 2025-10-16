@@ -19,7 +19,7 @@ const dancing = Dancing_Script({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL("https://restaurant.elixflare.com"),
   title: {
     default: "ElixCode Restaurant | Digital Menu",
     template: "%s | ElixCode Restaurant",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ElixCode Restaurant | Digital Menu",
     description: "Scan & browse our menu – fast, mobile-first, and delicious.",
-    url: "https://example.com",
+    url: "https://restaurant.elixflare.com",
     siteName: "ElixCode Restaurant",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     locale: "en_US",
