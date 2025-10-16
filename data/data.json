@@ -1,0 +1,88 @@
+{
+  "restaurantInfo": {
+    "name": "ElixCode Restaurant",
+    "phone": "+1234567890",
+    "whatsapp": "+1234567890",
+    "instagram": "https://instagram.com/ElixCode",
+    "location": "123 Main St, City, Country",
+    "email": "info@ElixCode.com",
+    "qrCodeUrl": "/images/qr-code.png",
+    "heroTagline": "Delicious Food For Every Mood",
+    "heroCta": "Order Now",
+    "openHours": "Mon\u2013Sun: 9:00 \u2013 22:00",
+    "about": {
+      "title": "We Are ElixCode",
+      "text": "We serve freshly made burgers, pizzas, and more \u2014 prepared with love and the freshest ingredients. Scan the QR on your table to browse the menu and place your order with the waiter."
+    }
+  },
+  "promotions": [
+    {
+      "title": "Tasty Thursdays",
+      "description": "20% off on all Burgers every Thursday.",
+      "discount": "20% OFF",
+      "days": "Thursday"
+    },
+    {
+      "title": "Pizza Days",
+      "description": "Every Monday get 15% off on all Pizzas.",
+      "discount": "15% OFF",
+      "days": "Monday"
+    }
+  ],
+  "menuItems": [
+    {
+      "category": "Burger",
+      "name": "Classic Beef Burger",
+      "description": "Juicy beef patty with cheese, lettuce, tomato & house sauce.",
+      "image": "/images/burger.jpg",
+      "price": "$10.99",
+      "ingredients": [
+        "Beef patty",
+        "Cheddar",
+        "Lettuce",
+        "Tomato",
+        "House sauce"
+      ]
+    },
+    {
+      "category": "Pizza",
+      "name": "Delicious Pizza",
+      "description": "Tomato, mozzarella, pepperoni \u2014 crispy & cheesy.",
+      "image": "/images/pizza.jpg",
+      "price": "$15.99",
+      "ingredients": ["Tomato sauce", "Cheese", "Pepperoni"]
+    },
+    {
+      "category": "Pasta",
+      "name": "Creamy Alfredo",
+      "description": "Fettuccine in creamy parmesan sauce.",
+      "image": "/images/pasta.jpg",
+      "price": "$12.50",
+      "ingredients": ["Fettuccine", "Parmesan", "Cream", "Garlic"]
+    },
+    {
+      "category": "Fries",
+      "name": "Loaded Fries",
+      "description": "Crispy fries topped with cheese & ranch.",
+      "image": "/images/fries.jpg",
+      "price": "$6.99",
+      "ingredients": ["Potatoes", "Cheese", "Ranch"]
+    },
+    {
+      "category": "Drinks",
+      "name": "Fresh Lemonade",
+      "description": "Refreshing homemade lemonade.",
+      "image": "/images/lemonade.jpg",
+      "price": "$3.99",
+      "ingredients": ["Lemon", "Water", "Sugar", "Mint"]
+    },
+    {
+      "category": "Salads",
+      "name": "Greek Salad",
+      "description": "Tomato, cucumber, olives, feta, and oregano.",
+      "image": "/images/salad.jpg",
+      "price": "$8.99",
+      "ingredients": ["Tomato", "Cucumber", "Olives", "Feta", "Oregano"]
+    }
+  ]
+}
