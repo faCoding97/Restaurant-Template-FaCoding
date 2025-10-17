@@ -1,16 +1,3 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'api.qrserver.com',
-        port: '',
-        pathname: '/v1/create-qr-code/**',
-      }
-    ],
-  },
-};
-
+const nextConfig = { reactStrictMode: true, images: { remotePatterns: [] } };
 export default nextConfig;

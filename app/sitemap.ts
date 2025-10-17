@@ -1,8 +1,1 @@
-import type { MetadataRoute } from "next";
-
-export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://restaurant.elixflare.com";
-  return [
-    { url: `${base}/`, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
-  ];
-}
+import type { MetadataRoute } from 'next';import data from '@/lib/data';export default function sitemap():MetadataRoute.Sitemap{const base=data.restaurantInfo.siteUrl;const categories=Array.from(new Set(data.menuItems.map(i=>i.category)));return[{url:`${base}/`,lastModified:new Date(),changeFrequency:'weekly',priority:1},{url:`${base}/about`,lastModified:new Date(),changeFrequency:'monthly',priority:.6},{url:`${base}/contact`,lastModified:new Date(),changeFrequency:'monthly',priority:.6},{url:`${base}/menu`,lastModified:new Date(),changeFrequency:'weekly',priority:.8},...categories.map(c=>({url:`${base}/menu/${encodeURIComponent(c)}`,lastModified:new Date(),changeFrequency:'weekly',priority:.8}))]}

@@ -3,36 +3,35 @@
     "name": "ElixCode Restaurant",
     "phone": "+1234567890",
     "whatsapp": "+1234567890",
-    "instagram": "https://instagram.com/ElixCode",
+    "instagram": "https://instagram.com/elixcode",
     "location": "123 Main St, City, Country",
-    "email": "info@ElixCode.com",
-    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=600x600&data=https%3A%2F%2Frestaurant.elixflare.com",
+    "email": "info@elixcode.com",
+    "qrCodeUrl": "/images/qr-code.png",
+    "openingHours": "Mon\u2013Sun: 9:00 \u2013 22:00",
+    "siteUrl": "https://restaurant.elixflare.com",
     "heroTagline": "Delicious Food For Every Mood",
     "heroCta": "Order Now",
-    "openHours": "Mon\u2013Sun: 9:00 \u2013 22:00",
-    "about": {
-      "title": "We Are ElixCode",
-      "text": "We serve freshly made burgers, pizzas, and more \u2014 prepared with love and the freshest ingredients. Scan the QR on your table to browse the menu and place your order with the waiter."
-    },
-    "siteUrl": "https://restaurant.elixflare.com"
+    "story": "Our Story: We started as a small kitchen with a big dream\u2014serve honest food with bold flavor.",
+    "vision": "Our Vision: To delight every guest with memorable taste and warm service.",
+    "beans": "Fresh & Organic Beans: We brew with handpicked, ethically sourced coffee beans."
   },
   "promotions": [
     {
       "title": "Tasty Thursdays",
-      "description": "20% off on all Burgers every Thursday.",
-      "discount": "20% OFF",
-      "days": "Thursday"
+      "description": "20% off on all Burgers every Thursday",
+      "day": "Thursday",
+      "discount": "20% OFF"
     },
     {
       "title": "Pizza Days",
-      "description": "Every Monday get 15% off on all Pizzas.",
-      "discount": "15% OFF",
-      "days": "Monday"
+      "description": "Every Monday get 15% off on all Pizzas",
+      "day": "Monday",
+      "discount": "15% OFF"
     }
   ],
   "menuItems": [
     {
-      "category": "Burger",
+      "category": "Burgers",
       "name": "Classic Beef Burger",
       "description": "Juicy beef patty with cheese, lettuce, tomato & house sauce.",
       "image": "/images/burger.jpg",
@@ -70,12 +69,36 @@
       "ingredients": ["Potatoes", "Cheese", "Ranch"]
     },
     {
-      "category": "Drinks",
-      "name": "Fresh Lemonade",
-      "description": "Refreshing homemade lemonade.",
-      "image": "/images/lemonade.jpg",
-      "price": "$3.99",
-      "ingredients": ["Lemon", "Water", "Sugar", "Mint"]
+      "category": "Cold Drinks",
+      "name": "Iced Coffee",
+      "description": "Chilled coffee over ice with milk.",
+      "image": "/images/iced-coffee.jpg",
+      "price": "$4.99",
+      "ingredients": ["Coffee", "Ice", "Milk"]
+    },
+    {
+      "category": "Hot Drinks",
+      "name": "Espresso",
+      "description": "Rich and bold single shot.",
+      "image": "/images/espresso.jpg",
+      "price": "$2.30",
+      "ingredients": ["Arabica beans", "Water"]
+    },
+    {
+      "category": "Seafood",
+      "name": "Grilled Salmon",
+      "description": "Served with lemon butter sauce.",
+      "image": "/images/salmon.jpg",
+      "price": "$19.50",
+      "ingredients": ["Salmon", "Lemon", "Butter", "Herbs"]
+    },
+    {
+      "category": "Fast Food",
+      "name": "Chicken Nuggets",
+      "description": "Crispy breaded chicken bites.",
+      "image": "/images/nuggets.jpg",
+      "price": "$7.99",
+      "ingredients": ["Chicken", "Breadcrumbs", "Spices"]
     },
     {
       "category": "Salads",
@@ -84,6 +107,14 @@
       "image": "/images/salad.jpg",
       "price": "$8.99",
       "ingredients": ["Tomato", "Cucumber", "Olives", "Feta", "Oregano"]
+    },
+    {
+      "category": "Desserts",
+      "name": "Chocolate Lava Cake",
+      "description": "Warm cake with molten center.",
+      "image": "/images/lava.jpg",
+      "price": "$6.50",
+      "ingredients": ["Chocolate", "Flour", "Eggs", "Sugar", "Butter"]
     }
   ]
 }
