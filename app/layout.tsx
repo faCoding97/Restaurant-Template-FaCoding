@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description: "Scan & browse our menu – fast, mobile-first, and delicious.",
     url: data.restaurantInfo.siteUrl,
     siteName: data.restaurantInfo.name,
-    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "/icon-restaurant-R.svg", width: 1200, height: 630 }],
     locale: "en_US",
     type: "website",
   },
@@ -49,11 +49,20 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${data.restaurantInfo.name} | Digital Menu`,
     description: "Scan & browse our menu – fast, mobile-first, and delicious.",
-    images: ["/og-image.png"],
+    images: ["/icon-restaurant-R.svg"],
   },
   alternates: { canonical: "/" },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined,
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/icons/icon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/icons/icon-512.png", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
 };
 export default function RootLayout({

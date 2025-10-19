@@ -103,8 +103,8 @@ public/
   robots.txt
   sitemap.xml
   images/              # Product/hero images (local)
-  og-image.png         # Social share image (valid PNG)
-app/icon.png           # App icon (valid PNG)
+  icon-restaurant-R.svg         # Social share image (valid PNG)
+app/icon-restaurant-R.svg           # App icon (valid PNG)
 tailwind.config.ts
 next.config.mjs
 tsconfig.json
@@ -166,7 +166,7 @@ All dynamic data lives in `data/data.json`. Example snippet:
 ## 🔍 SEO & Social
 
 - **Metadata** configured in `app/layout.tsx` (uses `restaurantInfo.siteUrl`).
-- **Open Graph** & **Twitter Card** (large image) support with `public/og-image.png`.
+- **Open Graph** & **Twitter Card** (large image) support with `public/icon-restaurant-R.svg`.
 - **Canonical links** set per-page; category pages get dedicated OG and canonical metadata.
 - **Sitemap**
 
@@ -216,7 +216,7 @@ All dynamic data lives in `data/data.json`. Example snippet:
   **Fix**: Ensure files using `framer-motion` start with `"use client"`.
 
 - **Invalid metadata images**
-  `app/icon.png` and `public/og-image.png` must be **valid PNGs** (non-empty, correct format). If you swap them, keep them valid.
+  `app/icon-restaurant-R.svg` and `public/icon-restaurant-R.svg` must be **valid PNGs** (non-empty, correct format). If you swap them, keep them valid.
 
 - **Remote images**
   This project uses **local** images. If you later load remote images via `next/image`, add the host to `images.remotePatterns` in `next.config.mjs`.
