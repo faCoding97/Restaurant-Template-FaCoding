@@ -4,57 +4,81 @@ import { Poppins, Dancing_Script } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import data from "@/lib/data";
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
   variable: "--font-poppins",
   display: "swap",
 });
+
 const dancing = Dancing_Script({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-dancing",
   display: "swap",
 });
+
 export const metadata: Metadata = {
   metadataBase: new URL(data.restaurantInfo.siteUrl),
+
   title: {
     default: `${data.restaurantInfo.name} | Digital Menu`,
     template: `%s | ${data.restaurantInfo.name}`,
   },
+
   description:
-    "Feane/Koppee-inspired digital restaurant menu. Browse burgers, pizza, pasta, salads & more.",
+    "Explore our digital restaurant menu — burgers, pizza, pasta, coffee & more. Fast, mobile-first, and inspired by Feane & Koppee.",
+
   keywords: [
     "restaurant",
     "menu",
+    "digital menu",
+    "QR menu",
+    "Feane",
+    "Koppee",
+    "coffee shop",
     "pizza",
     "burger",
     "pasta",
-    "coffee",
-    "qr menu",
-    "feane",
-    "koppee",
-    "digital menu",
+    "salads",
+    "responsive",
   ],
+
   openGraph: {
     title: `${data.restaurantInfo.name} | Digital Menu`,
-    description: "Scan & browse our menu – fast, mobile-first, and delicious.",
+    description:
+      "Scan & browse our menu — mobile-friendly, beautifully designed, and lightning fast.",
     url: data.restaurantInfo.siteUrl,
     siteName: data.restaurantInfo.name,
-    images: [{ url: "/icon-restaurant-R.svg", width: 1200, height: 630 }],
+    images: [
+      {
+        url: `${data.restaurantInfo.siteUrl}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: `${data.restaurantInfo.name} — Digital Menu`,
+      },
+    ],
     locale: "en_US",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: `${data.restaurantInfo.name} | Digital Menu`,
-    description: "Scan & browse our menu – fast, mobile-first, and delicious.",
-    images: ["/icon-restaurant-R.svg"],
+    description:
+      "Scan & browse our menu — mobile-first, visually rich, and powered by ElixFlare.",
+    images: [`${data.restaurantInfo.siteUrl}/og-image.jpg`],
   },
-  alternates: { canonical: "/" },
+
+  alternates: {
+    canonical: data.restaurantInfo.siteUrl,
+  },
+
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined,
   },
+
   icons: {
     icon: [
       { url: "/favicon.ico", type: "image/x-icon" },
@@ -65,6 +89,7 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
 };
+
 export default function RootLayout({
   children,
 }: {
